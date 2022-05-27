@@ -1,0 +1,14 @@
+<h4>Debounced input using Observables</h4>
+<hr>
+<p>To test this:</p>
+<ol>
+  <li>open devtools console</li>
+  <li>type somethin in the text input</li>
+</ol>
+<p>Expected behavior:</p>
+<ul>
+  <li>the input must update as you type</li>
+  <li>the console should output the input text <b>after</b> you stop typing</li>
+</ul>
+<filter-input [onChange]=product.productName (onChange)=”childToParent($event)”></app-child>
+</filter-input>
